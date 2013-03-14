@@ -1,4 +1,8 @@
 Firstrails::Application.routes.draw do
+  root :to => "home#index"
+  match "/home" => "home#index" 
+  #match '/hello', :to => redirect('/hello.html')
+  #root :to => 'hello'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
