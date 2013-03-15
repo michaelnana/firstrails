@@ -2,6 +2,8 @@ Firstrails::Application.routes.draw do
   root :to => "home#index"
   match "/home" => "home#index" 
   match "/about" =>"home#about"
+  match "/signup" =>"users#new"
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
