@@ -8,6 +8,7 @@ Firstrails::Application.routes.draw do
   
   
   match "/signin" =>"sessions#new"
+  match "/signout" =>"sessions#destroy"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
