@@ -4,3 +4,7 @@
 <p>Welcome to this website that will be created</p>
 
 <%= link_to "Sign Up", signup_path%>
+<%= link_to "Sign In", signin_path%>
+<%if signed_in?%>
+<%= current_user.name %>
+<%end%>
