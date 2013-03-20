@@ -1,0 +1,11 @@
+<h1>Send a message</h1>
+<%=form_for(@message) do |x|%>
+<%=x.label :text%>
+<%=x.text_field :text%>
+
+<%=x.label :receiverId%>
+<%=x.text_field :receiverId%>
+
+<%=x.submit "Send"%>
+<%end%>
+

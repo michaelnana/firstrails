@@ -1,0 +1,11 @@
+<h1>Inbox</h1>
+<%=render '/shared/index'%>
+<br>
+<%=link_to "Send a message", new_message_path%>
+<ul>
+  <% @messages.each do |message| %>
+    <li>
+     <%=link_to message.text, message%>  From: <%=message.senderId%>
+    </li>
+  <% end %>
+</ul>

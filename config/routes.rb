@@ -2,6 +2,7 @@ Firstrails::Application.routes.draw do
   root :to => "home#index"
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :messages
   match "/home" => "home#index" 
   match "/about" =>"home#about"
   match "/signup" =>"users#new"
